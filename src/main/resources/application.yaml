@@ -12,3 +12,12 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+  security:
+    user:
+      name: "user"
+      password: "pass"
+jwt:
+  access-token-key: ${ACCESS_TOKEN_KEY}
+  refresh-token-key: ${REFRESH_TOKEN_KEY}
+  refresh-token-ttl: 1d
+  access-token-ttl: 15m
