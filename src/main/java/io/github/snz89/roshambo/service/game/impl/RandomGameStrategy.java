@@ -2,7 +2,7 @@ package io.github.snz89.roshambo.service.game.impl;
 
 import io.github.snz89.roshambo.model.GameContext;
 import io.github.snz89.roshambo.model.GameContextQuery;
-import io.github.snz89.roshambo.model.Move;
+import io.github.snz89.roshambo.model.enums.Move;
 import io.github.snz89.roshambo.service.game.GameStrategy;
 
 import java.util.concurrent.ThreadLocalRandom;

@@ -1,6 +1,8 @@
 package io.github.snz89.roshambo.model;
 
 import io.github.snz89.roshambo.exception.MissingContextDataException;
+import io.github.snz89.roshambo.model.enums.Move;
+import io.github.snz89.roshambo.model.enums.RoundResult;
 
 import java.util.List;
 import java.util.Map;

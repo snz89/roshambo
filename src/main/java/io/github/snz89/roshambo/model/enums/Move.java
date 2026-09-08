@@ -1,4 +1,4 @@
-package io.github.snz89.roshambo.model;
+package io.github.snz89.roshambo.model.enums;
 
 public enum Move {
     ROCK,
