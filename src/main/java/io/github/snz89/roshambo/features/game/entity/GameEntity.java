@@ -2,6 +2,7 @@ package io.github.snz89.roshambo.features.game.entity;
 
 import io.github.snz89.roshambo.domain.model.enums.GameResult;
 import io.github.snz89.roshambo.domain.model.enums.StrategyType;
+import io.github.snz89.roshambo.features.game.dto.request.GameStrategySettings;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,6 +18,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OrderBy;
 import jakarta.persistence.Table;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -38,9 +41,9 @@ public class GameEntity {
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private StrategyType botStrategy;
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "strategy_settings", nullable = false, columnDefinition = "jsonb")
+    private GameStrategySettings strategySettings;
 
     @Column(nullable = false)
     private Integer playerScore = 0;
@@ -80,12 +83,12 @@ public class GameEntity {
         this.user = user;
     }
 
-    public StrategyType getBotStrategy() {
-        return botStrategy;
+    public GameStrategySettings getStrategySettings() {
+        return strategySettings;
     }
 
-    public void setBotStrategy(StrategyType botStrategy) {
-        this.botStrategy = botStrategy;
+    public void setStrategySettings(GameStrategySettings strategySettings) {
+        this.strategySettings = strategySettings;
     }
 
     public Integer getPlayerScore() {
