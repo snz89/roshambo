@@ -1,9 +1,8 @@
-package io.github.snz89.roshambo.service.game.impl;
+package io.github.snz89.roshambo.domain.service;
 
-import io.github.snz89.roshambo.model.GameContext;
-import io.github.snz89.roshambo.model.GameContextQuery;
-import io.github.snz89.roshambo.model.enums.Move;
-import io.github.snz89.roshambo.service.game.GameStrategy;
+import io.github.snz89.roshambo.domain.model.GameContext;
+import io.github.snz89.roshambo.domain.model.GameContextQuery;
+import io.github.snz89.roshambo.domain.model.enums.Move;
 
 import java.util.concurrent.ThreadLocalRandom;
 

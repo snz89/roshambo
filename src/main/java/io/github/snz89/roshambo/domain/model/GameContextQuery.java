@@ -1,4 +1,4 @@
-package io.github.snz89.roshambo.model;
+package io.github.snz89.roshambo.domain.model;
 
 import java.util.HashSet;
 import java.util.Set;

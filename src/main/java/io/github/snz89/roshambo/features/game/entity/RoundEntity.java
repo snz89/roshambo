@@ -1,7 +1,7 @@
-package io.github.snz89.roshambo.entity;
+package io.github.snz89.roshambo.features.game.entity;
 
-import io.github.snz89.roshambo.model.enums.GameResult;
-import io.github.snz89.roshambo.model.enums.Move;
+import io.github.snz89.roshambo.domain.model.enums.GameResult;
+import io.github.snz89.roshambo.domain.model.enums.Move;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

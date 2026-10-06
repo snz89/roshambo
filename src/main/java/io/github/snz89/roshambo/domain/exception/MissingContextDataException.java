@@ -1,4 +1,4 @@
-package io.github.snz89.roshambo.exception;
+package io.github.snz89.roshambo.domain.exception;
 
 public class MissingContextDataException extends RuntimeException {
     public MissingContextDataException(String message) {

@@ -1,7 +1,7 @@
 package io.github.snz89.roshambo.security.service;
 
-import io.github.snz89.roshambo.entity.UserEntity;
-import io.github.snz89.roshambo.repository.UsersRepository;
+import io.github.snz89.roshambo.features.game.entity.UserEntity;
+import io.github.snz89.roshambo.features.game.repository.UsersRepository;
 import java.util.List;
 import org.jspecify.annotations.NonNull;
 import org.springframework.security.core.userdetails.User;

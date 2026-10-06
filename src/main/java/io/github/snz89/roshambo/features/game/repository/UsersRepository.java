@@ -1,6 +1,6 @@
-package io.github.snz89.roshambo.repository;
+package io.github.snz89.roshambo.features.game.repository;
 
-import io.github.snz89.roshambo.entity.UserEntity;
+import io.github.snz89.roshambo.features.game.entity.UserEntity;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package io.github.snz89.roshambo.model.enums;
+package io.github.snz89.roshambo.domain.model.enums;
 
 public enum GameResult {
     PLAYER_WIN,
