@@ -1,8 +1,7 @@
 package io.github.snz89.roshambo.features.game.entity;
 
 import io.github.snz89.roshambo.domain.model.enums.GameResult;
-import io.github.snz89.roshambo.domain.model.enums.StrategyType;
-import io.github.snz89.roshambo.features.game.dto.request.GameStrategySettings;
+import io.github.snz89.roshambo.domain.model.GameStrategySettings;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -38,7 +37,7 @@ public class GameEntity {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id")
     private UserEntity user;
 
     @JdbcTypeCode(SqlTypes.JSON)

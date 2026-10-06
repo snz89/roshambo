@@ -1,4 +1,4 @@
-package io.github.snz89.roshambo.features.game.dto.request;
+package io.github.snz89.roshambo.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
